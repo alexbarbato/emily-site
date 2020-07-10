@@ -8,9 +8,23 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+
+    <h1>Here we go</h1>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <label for="name">Name:
+        <input id="name" name="name" type="text"/>
+      </label>
+      <label for="phone">Enter your phone number:
+        <input id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+      </label>
+      <label for="email">Or enter your email:
+        <input id="email" name="email" type="email"/>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

@@ -11,12 +11,12 @@ const IndexPage = () => (
 
     <h1>Here we go</h1>
 
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST" action="/page-2/" data-netlify="true">
       <label for="name">Name:
         <input id="name" name="name" type="text"/>
       </label>
       <label for="phone">Enter your phone number:
-        <input id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+        <input id="phone" name="phone" type="text"/>
       </label>
       <label for="email">Or enter your email:
         <input id="email" name="email" type="email"/>
